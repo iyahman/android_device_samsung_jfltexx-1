@@ -14,6 +14,28 @@
 # limitations under the License.
 #
 
+GAPPS_VARIANT := stock
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+GAPPS_FORCE_MATCHING_DPI := true
+
+GAPPS_EXCLUDED_PACKAGES := Cloud Print
+GAPPS_EXCLUDED_PACKAGES := Google+
+GAPPS_EXCLUDED_PACKAGES := Google Docs
+GAPPS_EXCLUDED_PACKAGES := Google Drive
+GAPPS_EXCLUDED_PACKAGES := Google Duo
+GAPPS_EXCLUDED_PACKAGES := Google Fitness
+GAPPS_EXCLUDED_PACKAGES := Google News & Weather
+GAPPS_EXCLUDED_PACKAGES := Google Play Books
+GAPPS_EXCLUDED_PACKAGES := Google Play Movies & TV
+GAPPS_EXCLUDED_PACKAGES := Google Play Music
+GAPPS_EXCLUDED_PACKAGES := Google Sheets
+GAPPS_EXCLUDED_PACKAGES := Google Slides
+GAPPS_EXCLUDED_PACKAGES := Google VR Services
+GAPPS_EXCLUDED_PACKAGES := Hangouts
+GAPPS_EXCLUDED_PACKAGES := Maps
+GAPPS_EXCLUDED_PACKAGES := Hangouts
+GAPPS_EXCLUDED_PACKAGES := TalkBack
+
 ## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/jf-gsm-common/jf-gsm-common-vendor.mk)
 
@@ -22,3 +44,5 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/jfltexx/overlay
 
 # Inherit from jf-common
 $(call inherit-product, device/samsung/jf-common/jf-common.mk)
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
