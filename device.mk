@@ -19,22 +19,29 @@ GAPPS_FORCE_PACKAGE_OVERRIDES := true
 GAPPS_FORCE_MATCHING_DPI := true
 
 GAPPS_EXCLUDED_PACKAGES := Cloud Print
+GAPPS_EXCLUDED_PACKAGES := Device Health Services
 GAPPS_EXCLUDED_PACKAGES := Google+
 GAPPS_EXCLUDED_PACKAGES := Google Docs
 GAPPS_EXCLUDED_PACKAGES := Google Drive
 GAPPS_EXCLUDED_PACKAGES := Google Duo
 GAPPS_EXCLUDED_PACKAGES := Google Fitness
+GAPPS_EXCLUDED_PACKAGES := Google Keep
 GAPPS_EXCLUDED_PACKAGES := Google News & Weather
+GAPPS_EXCLUDED_PACKAGES := Google Now Launcher
 GAPPS_EXCLUDED_PACKAGES := Google Play Books
 GAPPS_EXCLUDED_PACKAGES := Google Play Movies & TV
 GAPPS_EXCLUDED_PACKAGES := Google Play Music
+GAPPS_EXCLUDED_PACKAGES := Google Play Newsstand
 GAPPS_EXCLUDED_PACKAGES := Google Sheets
 GAPPS_EXCLUDED_PACKAGES := Google Slides
 GAPPS_EXCLUDED_PACKAGES := Google VR Services
 GAPPS_EXCLUDED_PACKAGES := Hangouts
 GAPPS_EXCLUDED_PACKAGES := Maps
+GAPPS_EXCLUDED_PACKAGES := Messenger
+GAPPS_EXCLUDED_PACKAGES := Pixel Icons
 GAPPS_EXCLUDED_PACKAGES := Hangouts
 GAPPS_EXCLUDED_PACKAGES := TalkBack
+GAPPS_EXCLUDED_PACKAGES := YouTube
 
 ## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/jf-gsm-common/jf-gsm-common-vendor.mk)
